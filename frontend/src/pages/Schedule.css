@@ -1,0 +1,121 @@
+.schedule {
+  animation: fadeIn 0.4s ease-in;
+}
+
+.schedule h1 {
+  color: #2d3748;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.schedule-day {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.schedule-day:hover {
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+  transform: translateY(-5px);
+  border-color: #667eea;
+}
+
+.schedule-day h2 {
+  color: #667eea;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 12px;
+}
+
+.no-classes {
+  color: #a0aec0;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.schedule-items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.schedule-item {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  padding: 20px;
+  border-radius: 15px;
+  border-left: 5px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.schedule-item:hover {
+  background: linear-gradient(135deg, #edf2f7 0%, #e2e8f0 100%);
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.15);
+}
+
+.schedule-time {
+  color: #667eea;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.schedule-course {
+  color: #2d3748;
+}
+
+.schedule-course strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.schedule-classroom,
+.schedule-group {
+  display: block;
+  color: #718096;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.schedule-classroom::before {
+  content: '📍 ';
+  margin-right: 5px;
+}
+
+.schedule-group::before {
+  content: '👥 ';
+  margin-right: 5px;
+}
+
+.loading {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 1.3rem;
+  color: #718096;
+  font-weight: 500;
+}
